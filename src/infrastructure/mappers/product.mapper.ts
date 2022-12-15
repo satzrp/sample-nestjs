@@ -8,7 +8,7 @@ export const productToProductView = (product: Product): ProductView => {
   productView.description = product.description;
   productView.price = product.price.valueWithCurrency();
   productView.quantity = product.quantity.valueWithUnits();
-  productView.expiryDate = product.expiryDate.toISOString();
+  productView.expiryDate = product.expiryDate.toDateString();
   return productView;
 };
 
