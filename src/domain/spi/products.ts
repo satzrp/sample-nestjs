@@ -1,0 +1,42 @@
+export const products = [
+  {
+    id: '1',
+    name: 'Product One',
+    description: 'Product One Description',
+    price: 10.0,
+    quantity: 10,
+    expiryDate: '12/12/2022',
+  },
+  {
+    id: '2',
+    name: 'Product Two',
+    description: 'Product Two Description',
+    price: 20.5,
+    quantity: 30,
+    expiryDate: '11/12/2022',
+  },
+  {
+    id: '3',
+    name: 'Product Three',
+    description: 'Product Three Description',
+    price: 30.99,
+    quantity: 230,
+    expiryDate: '12/31/2022',
+  },
+  {
+    id: '4',
+    name: 'Product Four',
+    description: 'Product Four Description',
+    price: 40.95,
+    quantity: 75,
+    expiryDate: '12/31/2022',
+  },
+  {
+    id: '5',
+    name: 'Product Five',
+    description: 'Product Five Description',
+    price: 50.5,
+    quantity: 100,
+    expiryDate: '12/31/2022',
+  },
+];
