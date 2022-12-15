@@ -21,6 +21,7 @@ describe('ProductStore', () => {
     it('product store should be defined', () => {
       expect(productStore).toBeDefined();
     });
+
     it('fetchAvailableProducts method should return all the available products', () => {
       const allProducts = productStore.fetchAvailableProducts();
       expect(allProducts).toBeDefined();

@@ -11,8 +11,8 @@ export class Price {
   private readonly _value: number;
   private readonly _currency: Currency;
 
-  constructor(value: number, currency: Currency) {
-    if (value === undefined || currency === undefined) {
+  private constructor(value: number, currency: Currency) {
+    if (!value || !currency) {
       throw new PriceNotValidError('Invalid Price');
     }
     this._value = value;

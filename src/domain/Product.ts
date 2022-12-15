@@ -22,6 +22,9 @@ export class Product {
     quantity: Quantity,
     expiryDate: Date,
   ) {
+    if (!id || !name || !description || !price || !quantity || !expiryDate) {
+      throw new InvalidProductError('Invalid Product');
+    }
     this._id = id;
     this._name = name;
     this._description = description;

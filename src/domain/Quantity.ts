@@ -6,9 +6,9 @@ export class QuantityValueError extends Error {
 
 export class Quantity {
   private readonly _value: number;
-  constructor(value: number) {
-    if (value < 0) {
-      throw new QuantityValueError('Quantity value cannot be less than 0');
+  private constructor(value: number) {
+    if (value === undefined || value < 0) {
+      throw new QuantityValueError('Invalid Quantity');
     }
     this._value = value;
   }
